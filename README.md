@@ -2,7 +2,7 @@
 
 An innovative, state-of-the-art AI platform that transforms meeting recordings into deep, actionable intelligence. Featuring a **Global Agent Suite**, this application goes beyond simple transcription to provide emotional insights and cross-lingual analysis.
 
-![MeetingPulse Heatmap Interface](public/dashboard-preview.png) *(Note: Add your own screenshot here)*
+![MeetingPulse Heatmap Interface]("C:\Users\Rangu Suchandra\Desktop\SUMMERIZER DB.jpeg") *(Note: Add your own screenshot here)*
 
 ## 🌟 Key Innovations
 
