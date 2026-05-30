@@ -1,68 +1,87 @@
-# 🎙️ Global Agent Intelligence: AI Meeting Summarizer
+<div align="center">
 
-An innovative, state-of-the-art AI platform that transforms meeting recordings into deep, actionable intelligence. Featuring a **Global Agent Suite**, this application goes beyond simple transcription to provide emotional insights and cross-lingual analysis.
+# AI Meeting Summarizer
 
-![MeetingPulse Heatmap Interface]("C:\Users\Rangu Suchandra\Desktop\SUMMERIZER DB.jpeg") *(Note: Add your own screenshot here
-<img width="1600" height="764" alt="image" src="https://github.com/user-attachments/assets/35ee31fa-1f84-43d5-8858-4fa8825907e7" />
+Meeting intelligence platform for transcription, summaries, sentiment heatmaps, action items, and empathetic follow-ups.
 
+[![Next.js](https://img.shields.io/badge/Next.js-frontend-black)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-backend-green)](https://fastapi.tiangolo.com)
+[![Groq](https://img.shields.io/badge/Groq-Whisper%20transcription-orange)](#ai-architecture)
+[![Gemini](https://img.shields.io/badge/Gemini-analysis-blue)](#ai-architecture)
 
-## 🌟 Key Innovations
+</div>
 
-### 🌍 Universal Language Bridge
-- **Multilingual Support**: Upload meetings in any language and receive summaries in your target language (English, Hindi, Spanish, French, etc.).
-- **Automatic Translation**: Seamlessly bridges communication gaps in global teams.
+## Overview
 
-### 📊 Emotional Sentiment Heatmap
-- **MeetingPulse Engine**: Visualizes the "heartbeat" of your meeting with a dynamic SVG sentiment graph.
-- **Momentum Tracking**: Track the emotional flow—from tense debates to productive alignment—across the duration of the meeting.
+AI Meeting Summarizer turns meeting recordings into structured business intelligence. It is built to go beyond a normal transcript by extracting summaries, action items, emotional flow, and follow-up drafts.
 
-### 💖 Empathy-Aware Smart Outreach
-- **Contextual Drafting**: Automatically generates follow-up emails or Slack messages that match the *emotional tone* of the meeting.
-- **Agent Intelligence**: The agent detects excitement or concern and adjusts its language to ensure professional, empathetic follow-ups.
+## Core Capabilities
 
-## 🚀 Tech Stack
+| Capability | Description |
+|---|---|
+| Transcription | Converts meeting audio into text |
+| Multilingual Summaries | Produces summaries across language preferences |
+| Sentiment Heatmap | Visualizes emotional flow across the meeting |
+| Action Items | Extracts owners, decisions, and next steps |
+| Smart Outreach | Drafts follow-up emails or Slack-style messages |
+| Session History | Keeps local meeting intelligence for review |
 
-- **Frontend**: Next.js 14, React, Tailwind CSS, Framer Motion (for premium animations).
-- **Backend**: FastAPI (Python), Uvicorn.
-- **AI Intelligence**: 
-  - **Transcription**: Groq (Whisper-large-v3) for near-instant precision.
-  - **Analysis**: Google Gemini 2.5 Flash for deep reasoning and multilingual support.
-- **State Management**: LocalStorage for session-based meeting persistence.
+## AI Architecture
 
-## 🛠️ Installation & Setup
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/BUNNY-RANGU/AI-MEETING--SUMMERIZER.git
-cd AI-MEETING--SUMMERIZER
+```text
+Audio Upload
+  -> Groq Whisper transcription
+  -> Gemini analysis
+  -> Summary, sentiment, action items
+  -> Follow-up draft
 ```
 
-### 2. Backend Setup
+## Tech Stack
+
+- Next.js and React
+- Tailwind CSS
+- Framer Motion
+- FastAPI
+- Groq Whisper
+- Google Gemini
+
+## Run Locally
+
+Backend:
+
 ```bash
 cd ai-meeting-summarizer/backend
-# Create a virtual environment
 python -m venv .venv
-source .venv/bin/activate # On Windows use: .venv\Scripts\activate
-# Install dependencies
+.venv\Scripts\activate
 pip install -r requirements.txt
-# Set up .env
-# Create a .env file with:
-# OPENAI_API_KEY=your_groq_key
-# GEMINI_API_KEY=your_gemini_key
 python main.py
 ```
 
-### 3. Frontend Setup
+Frontend:
+
 ```bash
 cd ai-meeting-summarizer
 npm install
 npm run dev
 ```
 
-## 📐 Architecture
-The system uses a **Dual-Agent Architecture**:
-1. **The Scribe**: Handled by Groq/Whisper, focusing on high-fidelity audio-to-text conversion.
-2. **The Analyst**: Handled by Gemini, performing multi-step reasoning: Sentiment Extraction -> Summary Synthesis -> Action Item Mapping -> Outreach Drafting.
+## Environment
 
-## 📄 License
-MIT License - Created with passion for innovative AI communication.
+Create a backend `.env` file:
+
+```env
+GROQ_API_KEY=
+GEMINI_API_KEY=
+```
+
+## Use Cases
+
+- Team meeting summaries
+- Founder and startup call notes
+- Class or workshop summaries
+- Cross-language meeting review
+- Follow-up automation drafts
+
+## Author
+
+Built by [Rangu Suchandra](https://github.com/BUNNY-RANGU).
